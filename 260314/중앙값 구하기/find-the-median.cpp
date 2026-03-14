@@ -5,42 +5,18 @@ int main() {
     int A, B, C;
     cin >> A >> B >> C;
 
-    if (A < B)
+    if ((B<A && A<C) || (C<A && A<B))
     {
-        if (B < C)
-        {
-            cout << B;
-        }
-        else
-        {
-            cout << C;
-        
-        }
-
+        cout << A;
+    }
+    else if ((A<B && B<C) || (C<B && B<A))
+    {
+        cout << B;
     }
 
-    if(A>B)
+    else
     {
-        if(A < C)
-        {
-            cout << A;
-        }
-        else
-        {
-            cout << C;
-        }
-    }
-
-    if(C<A)
-    {
-        if(A<B)
-        {
-            cout << A;
-        }
-        else
-        {
-            cout << B;
-        }
+        cout << C;
     }
     return 0;
 }
