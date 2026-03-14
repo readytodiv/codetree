@@ -19,7 +19,7 @@ int main() {
 
     }
 
-    else
+    if(A>B)
     {
         if(A < C)
         {
@@ -28,6 +28,18 @@ int main() {
         else
         {
             cout << C;
+        }
+    }
+
+    if(C<A)
+    {
+        if(A<B)
+        {
+            cout << A;
+        }
+        else
+        {
+            cout << B;
         }
     }
     return 0;
